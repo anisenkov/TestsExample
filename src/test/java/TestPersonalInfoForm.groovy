@@ -2,6 +2,7 @@
 
 import io.qameta.allure.Step
 import org.junit.Test
+import pageobjects.Form
 import utils.BaseTest
 
 import static org.junit.Assert.assertEquals;
@@ -30,9 +31,11 @@ class TestPersonalInfoForm extends BaseTest {
         ctx.form.setField("firstname", "Vasily")
         ctx.form.setField("lastname", "Testov")
         ctx.form.setField("birthday-day", "15")
+        ctx.form.selectMonth(Form.Months.MARCH)
         ctx.form.setField("birthday-year", "1990")
         ctx.form.setField("city", "Moscow")
         ctx.form.clickButton("Мужской")
+        ctx.form.selectCountry("Сингапур")
         ctx.form.clickButton("Отменить")
     }
 }
