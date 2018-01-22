@@ -1,5 +1,7 @@
 package pageobjects
 
+import pageobjects.base.Page
+
 import static com.codeborne.selenide.Selenide.$
 
 /**

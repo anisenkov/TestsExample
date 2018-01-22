@@ -2,7 +2,7 @@
 
 import io.qameta.allure.Step
 import org.junit.Test
-import pageobjects.Form
+import pageobjects.base.Form
 import utils.BaseTest
 
 import static org.junit.Assert.assertEquals;
